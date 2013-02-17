@@ -10,9 +10,9 @@
  </body>
  <body>
 	 <h3>Comments</h3>
-	  <?php if($comments):foreach($comments as $comment):?>	 
-	  <h4><?php  echo $comment->comment_name;?> (<?php echo $comment->comment_date;?>)</h4>
-	  <?php echo $comment->comment_body;?>  
+	  <?php if($comments):foreach($comments as $comment):?>	 	  
+	 <p><?php echo $comment->comment_body;?></p>  
+	  <span>Submitted by:<?php  echo $comment->comment_name; ?> <?php echo date('d-F-Y H:i:s',strtotime($comment->comment_date));?></span>
 	   <hr/>  
 	  <?php endforeach; else:?>
 	  <h4>No Comments yet!</h4>

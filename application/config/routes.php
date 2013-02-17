@@ -43,6 +43,7 @@ $route['404_override'] = '';
 
 $route['new-post'] = "blog/add_new_entry";
 $route['post/(:num)'] = 'blog/post/$1';
+$route['post/edit/(:num)'] = 'blog/post_edit/$1';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

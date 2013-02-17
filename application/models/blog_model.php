@@ -54,7 +54,7 @@ class Blog_model extends CI_Model
 	}
 	 
 	function total_comments($id)
-	{
+	{		 
 		$this->db->like('entry_id', $id);
 		$this->db->from('comment');
 		return $this->db->count_all_results();
