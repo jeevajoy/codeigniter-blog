@@ -38,7 +38,7 @@ class Blog extends CI_Controller
             $body = $this->input->post('entry_body');
             $this->blog_model->add_new_entry($name,$body);
             $this->session->set_flashdata('message', '1 new entry added!');
-            redirect('index.php/new-post');
+            redirect('index.php/blog');
         }
     }
     

@@ -10,7 +10,8 @@ class Blog_model extends CI_Model
     function get_all_posts()
     {
         //get all entry
-        $query = $this->db->get('entry');
+        $this->db->order_by("entry_date", "desc");
+        $query = $this->db->get('entry');        
         return $query->result();
     }
  
