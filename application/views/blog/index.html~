@@ -1,0 +1,2 @@
+<h1> My Blog Page</h1>
+<?php echo anchor('login','Login'); ?>
